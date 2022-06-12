@@ -14,7 +14,7 @@ class WordCount():
         return print("Total Number of Words in Text:" + " " + str(self.word_length))
 
     def decision(self):
-        print("\nPlease press \"1\" if you would like to stop this program or 2 to coninue")
+        print("\nPlease press \"1\" if you would like to stop this program or \"2\" to continue")
         self.select = input()
 
         return self.select
@@ -28,10 +28,10 @@ def main():
         select = obj.decision()
 
         if select == 1:
-            break
-
-        elif select == 2:
             continue
+
+        else:
+            break
 
 
 if __name__ == "__main__":
